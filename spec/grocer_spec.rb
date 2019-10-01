@@ -58,6 +58,7 @@ describe "Grocer" do
       end
 
       it "adds a new key, value pair to the cart hash called 'ITEM NAME W/COUPON'" do
+        puts @avocado_result
         expect(@avocado_result.keys).to include("AVOCADO W/COUPON")
       end
 

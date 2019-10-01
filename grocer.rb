@@ -19,9 +19,10 @@ def apply_coupons(cart, coupons)
     coupon_item = coupon[:item]
     if cart[coupon_item]
       # do something to apply the discount
+      
       if coupon[:num] <= cart[coupon_item][:count]
-        cart[coupon_item][:count] - coupon[:num]
-        new_key = coupon_item 
+        cart[coupon_item][:count] -= coupon[:num]
+        new_key = "#{coupon_item} "
       end
     end 
   end 

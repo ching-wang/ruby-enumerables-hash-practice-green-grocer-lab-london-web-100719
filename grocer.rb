@@ -37,7 +37,9 @@ end
     
 
 def apply_clearance(cart)
-  cart.map
+  cart.map do |k, v| 
+    if v 
+    end
 end
 
 def checkout(cart, coupons)

@@ -38,7 +38,9 @@ end
 
 def apply_clearance(cart)
   cart.map do |k, v| 
-    if v 
+    if v[:clearance]
+  end
+    [k,v]
     end
 end
 

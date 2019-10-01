@@ -26,27 +26,6 @@ def apply_coupons(cart, coupons)
     end 
   end 
     
-  # coupons.each do |coupon|
-  #   if !cart[coupon[:item]]
-  #     return
-  #   end
-  #   coupon_items_count = 0 
-    
-  #   while cart[coupon[:item]][:count] >= coupon[:num]
-  #     cart[coupon[:item]][:count] -= coupon[:num]
-  #     coupon_items_count += coupon[:num]
-  #   end
-  #   if coupon_items_count == 0 
-  #     next 
-  #   end 
-  #   cart["#{coupon[:item]} W/COUPON"] = {
-  #     :price => coupon[:cost]/ coupon_items_count,
-  #     :clearance => true,
-  #     :count => coupon_items_count
-  #   }
-  # end
-  # return cart 
-end
 
 def apply_clearance(cart)
  

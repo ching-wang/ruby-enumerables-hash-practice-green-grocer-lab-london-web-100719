@@ -24,7 +24,7 @@ def apply_coupons(cart, coupons)
         cart[coupon_item][:count] -= coupon[:num]
         new_key = "#{coupon_item} W/COUPON" 
         if !cart[new_key]
-           cart[new_key] = {:count => 0}
+            cart[new_key] = {:count => 0}
         end
         cart[new_key][:count] += coupon[:num]
       end

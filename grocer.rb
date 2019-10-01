@@ -31,7 +31,8 @@ def apply_coupons(cart, coupons)
         cart[new_key][:price] = coupon[:cost] / cart[new_key][:count]
       end
     end 
-  end 
+  end
+  return cart
 end 
     
 

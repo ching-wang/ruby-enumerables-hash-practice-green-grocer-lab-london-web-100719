@@ -161,6 +161,7 @@ describe "Grocer" do
       consolidated_cart = consolidate_cart(cart)
 
       result = apply_clearance(consolidated_cart)
+      puts result
       expect(result["TEMPEH"][:price]).to eq(2.40)
     end
 

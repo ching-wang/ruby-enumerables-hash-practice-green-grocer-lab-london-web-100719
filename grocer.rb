@@ -41,8 +41,8 @@ def apply_clearance(cart)
     if item[:clearance]
        item[:price] = item[:price] * 0.8
     end
-    [k,item]
   end
+  return cart 
 end
 
 def checkout(cart, coupons)
